@@ -1,0 +1,69 @@
+.Button {
+  color: white;
+  font-weight: bold;
+  outline: none;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  margin: 16px;
+  width: 95%;
+  padding: 20px;
+  font-size: 18px;
+}
+.Button.large {
+  width: 200px;
+  padding: 20px 0;
+}
+.Button.medium {
+  width: 200px;
+  padding: 15px 0;
+}
+.Button.small {
+  width: 200px;
+  padding: 10px 0;
+}
+.Button.blue {
+  background: #228be6;
+}
+.Button.blue:hover {
+  background: #50a3eb;
+}
+.Button.blue.outline {
+  color: #228be6;
+  background: none;
+  border: 1px solid #228be6;
+}
+.Button.blue.outline:hover {
+  background: #228be6;
+  color: #fff;
+}
+.Button.gray {
+  background: #6d6d6d;
+}
+.Button.gray:hover {
+  background: #878787;
+}
+.Button.gray.outline {
+  color: #6d6d6d;
+  background: none;
+  border: 1px solid #6d6d6d;
+}
+.Button.gray.outline:hover {
+  background: #6d6d6d;
+  color: #fff;
+}
+.Button.magenta {
+  background: magenta;
+}
+.Button.magenta:hover {
+  background: #ff33ff;
+}
+.Button.magenta.outline {
+  color: magenta;
+  background: none;
+  border: 1px solid magenta;
+}
+.Button.magenta.outline:hover {
+  background: magenta;
+  color: #fff;
+}/*# sourceMappingURL=Button.css.map */

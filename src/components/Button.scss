@@ -1,0 +1,79 @@
+// 변수로 색상 담기
+$blue: #228be6;
+$gray: #6d6d6d;
+$magenta: magenta;
+@mixin button-color($color) {
+    background: $color;
+    &:hover {
+        background: lighten($color, $amount: 10%);
+    }
+    &.outline {
+        color: $color;
+        background: none;
+        border: 1px solid $color;
+        &:hover {
+            background: $color;
+            color: #fff;
+        }
+    }
+}
+.Button {
+    color: white;
+    font-weight: bold;
+    outline: none;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    margin: 16px;
+    width: 95%;
+    padding: 20px;
+
+    font-size: 18px;
+
+    //사이즈 관리
+    &.large {
+        width: 200px;
+        padding: 20px 0;
+    }
+    &.medium {
+        width: 200px;
+        padding: 15px 0;
+    }
+    &.small {
+        width: 200px;
+        padding: 10px 0;
+    }
+    //색상 관리
+    &.blue {
+        @include button-color($blue);
+    }
+    &.gray {
+        @include button-color($gray);
+    }
+    &.magenta {
+        @include button-color($magenta);
+    }
+    //선색 글색
+    // &.outline {
+    //     @include button-color($color);
+    // }
+    // &.borderBlue {
+    //     border: 1px solid $blue;
+    //     background-color: #fff;
+    //     color: $blue;
+    // }
+    // &.bordermagenta {
+    //     border: 1px solid $magenta;
+    //     background-color: #fff;
+    //     color: $magenta;
+    // }
+    // &.bordergray {
+    //     border: 1px solid $gray;
+    //     background-color: #fff;
+    //     color: $gray;
+    // }
+    // &:hover {
+    //     // background: lighten($blue, 40%); //색상을 40%로 밝게
+    //     background: darken($blue, $amount: 10%) //색상을 40%로 밝게
+    // }
+}
